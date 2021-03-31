@@ -9,6 +9,7 @@ import com.automation.requestPOJOmodel.LoginRequestPOJO;
 import com.automation.responsePOJOmodel.Login200ResponsePOJO;
 import com.automation.utilities.Helper;
 
+//POST OPERATION
 public class LoginTests extends BaseTest
 {
     LoginRequestPOJO loginRequestPOJO;
@@ -30,7 +31,7 @@ public class LoginTests extends BaseTest
 	public void loginValidation() //hit baseUri from basetest
 	{
 		SoftAssert sft= new SoftAssert();		
-		System.out.println(Helper.getValue("email").toString());
+		//System.out.println(Helper.getValue("email").toString());
 		loginRequestPOJO.setEmail(Helper.getValue("email").toString());
 		loginRequestPOJO.setPassword(Helper.getValue("password").toString());
 		request.body(loginRequestPOJO);

@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.tests.LoginTests">
+      <class name="com.automation.tests.SingleUserTest">
         <methods>
-          <include name="loginValidation"/>
-          <include name="setupEndPt"/>
-          <include name="initializePOJOs"/>
+          <include name="loadProperties"/>
           <include name="requestSetup"/>
+          <include name="newsingleUserValidation_id2"/>
+          <include name="initializePOJOs"/>
+          <include name="setupEndPt"/>
         </methods>
-      </class> <!-- com.automation.tests.LoginTests -->
+      </class> <!-- com.automation.tests.SingleUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

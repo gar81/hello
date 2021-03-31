@@ -2,29 +2,39 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-29T12:24:45 EDT" name="Default suite" finished-at="2021-03-29T12:24:47 EDT" duration-ms="1398">
+  <suite started-at="2021-03-31T11:39:56 EDT" name="Default suite" finished-at="2021-03-31T11:39:59 EDT" duration-ms="3254">
     <groups>
     </groups>
-    <test started-at="2021-03-29T12:24:45 EDT" name="Default test" finished-at="2021-03-29T12:24:47 EDT" duration-ms="1398">
-      <class name="com.automation.tests.LoginTests">
-        <test-method is-config="true" signature="initializePOJOs()[pri:0, instance:com.automation.tests.LoginTests@6580cfdd]" started-at="2021-03-29T12:24:45 EDT" name="initializePOJOs" finished-at="2021-03-29T12:24:45 EDT" duration-ms="9" status="PASS">
+    <test started-at="2021-03-31T11:39:56 EDT" name="Default test" finished-at="2021-03-31T11:39:59 EDT" duration-ms="3254">
+      <class name="com.automation.tests.SingleUserTest">
+        <test-method is-config="true" signature="loadProperties()[pri:0, instance:com.automation.tests.SingleUserTest@1ddf84b8]" started-at="2021-03-31T11:39:56 EDT" name="loadProperties" finished-at="2021-03-31T11:39:56 EDT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadProperties -->
+        <test-method is-config="true" signature="initializePOJOs()[pri:0, instance:com.automation.tests.SingleUserTest@1ddf84b8]" started-at="2021-03-31T11:39:56 EDT" name="initializePOJOs" finished-at="2021-03-31T11:39:56 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePOJOs -->
-        <test-method is-config="true" signature="requestSetup()[pri:0, instance:com.automation.tests.LoginTests@6580cfdd]" started-at="2021-03-29T12:24:45 EDT" name="requestSetup" finished-at="2021-03-29T12:24:47 EDT" duration-ms="1304" status="PASS">
+        <test-method is-config="true" signature="requestSetup()[pri:0, instance:com.automation.tests.SingleUserTest@1ddf84b8]" started-at="2021-03-31T11:39:56 EDT" name="requestSetup" finished-at="2021-03-31T11:39:58 EDT" duration-ms="1336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- requestSetup -->
-        <test-method is-config="true" signature="setupEndPt()[pri:0, instance:com.automation.tests.LoginTests@6580cfdd]" started-at="2021-03-29T12:24:47 EDT" name="setupEndPt" finished-at="2021-03-29T12:24:47 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupEndPt()[pri:0, instance:com.automation.tests.SingleUserTest@1ddf84b8]" started-at="2021-03-31T11:39:58 EDT" name="setupEndPt" finished-at="2021-03-31T11:39:58 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupEndPt -->
-        <test-method signature="loginValidation()[pri:0, instance:com.automation.tests.LoginTests@6580cfdd]" started-at="2021-03-29T12:24:47 EDT" name="loginValidation" finished-at="2021-03-29T12:24:47 EDT" duration-ms="17" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="newsingleUserValidation_id2()[pri:0, instance:com.automation.tests.SingleUserTest@1ddf84b8]" started-at="2021-03-31T11:39:58 EDT" name="newsingleUserValidation_id2" finished-at="2021-03-31T11:39:59 EDT" duration-ms="1829" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [200] but found [403]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.automation.utilities.Helper.getValue(Helper.java:50)
-at com.automation.tests.LoginTests.loginValidation(LoginTests.java:33)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [200] but found [403]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.automation.tests.SingleUserTest.newsingleUserValidation_id2(SingleUserTest.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,11 +65,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginValidation -->
-      </class> <!-- com.automation.tests.LoginTests -->
+        </test-method> <!-- newsingleUserValidation_id2 -->
+      </class> <!-- com.automation.tests.SingleUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
